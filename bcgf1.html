@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bar Chart Quiz</title>
+
+<style>
+
+
+div.a {
+  font-size: large;
+}
+
+div.ex1 {
+ width: 800px;
+margin: auto;
+ 
+}
+
+div.b {
+  line-height: 1.6;
+}
+
+</style>
+
+  </head>
+
+<body>
+
+<div class="a">
+<p><script language="JavaScript">
+<!--
+
+var numQues = 15;
+
+var answers = new Array(15);
+answers[0] = "bar chart illustrates";
+answers[1] = "school children";
+answers[2] = "gender";
+answers[3] = "in percentages";
+answers[4] = "more than";
+answers[5] = "the least";
+answers[6] = "equal";
+answers[7] = "around 33%";
+answers[8] = "at approximately 8%";
+answers[9] = "at only 5%";
+answers[10] = "percentages for";
+answers[11] = "are similar";
+answers[12] = "4% for";
+answers[13] = "is exactly";
+answers[14] = "at the same level";
+
+function getScore(form) {
+  var score = 0;
+
+  for (i=0; i<numQues; i++) {
+    if (form.elements[i].value == answers[i]) {
+      score++;
+    }
+  }
+
+  score = Math.round(score/numQues*100);
+  form.percentage.value = score + "%";
+
+  var correctAnswers = "";
+  for (i=1; i<=numQues; i++) {
+    correctAnswers += i + ". " + answers[i-1] + "\r\n";
+  }
+  form.solutions.value = correctAnswers;
+
+}
+
+// -->
+  </script>
+</p>
+
+<div class="ex1">
+
+<div class="b">
+
+<form name="quiz">
+
+
+
+  The <strong>1.</strong>
+  <input type="text" name="q1" size=20 value=""> information on the quantity of drugs <strong>2.</strong> <input type="text" name="q2" size=20 value="">
+in New Zealand take, divided by <strong>3.</strong> <input type="text" name="q3" size=20 value=""> and measured <strong>4.</strong> <input type="text" name="q4" size=20 value="">. Overall, it is immediately apparent that hashish or marijuana is used <strong>5.</strong> <input type="text" name="q5" size=20 value="">
+any of the other drugs, whereas LSD and medical drugs are used <strong>6.</strong> <input type="text" name="q6" size=20 value=""> . At first glance we can see that boys take more drugs than girls for 6 out of 7 of the drugs listed, however an <strong>7.</strong> <input type="text" name="q7" size=20 value=""> number of boys and girls take cocaine. 
+
+
+
+
+
+<p></br>
+To begin with, boys use more hashish or marijuana than girls at 
+<strong>8.</strong> <input type="text" name="q8" size=20 value=""> and 29% respectively. Following this, boys take heroin, opium or morphine <strong>9.</strong> <input type="text" name="q9" size=20 value=""> but girls <strong>10.</strong> <input type="text" name="q10" size=20 value="">
+
+
+
+</br>
+
+
+
+<p></br>
+On the other hand, the <strong>11.</strong> <input type="text" name="q11" size=20 value=""> amphetamines and solvents <strong>12.</strong> <input type="text" name="q12" size=20 value=""> for both boys and girls at 2% and 3% for girls and <strong>13.</strong> <input type="text" name="q13" size=20 value=""> both drugs for boys. Next, the pattern for LSD and medical drugs <strong>14.</strong> <input type="text" name="q14" size=20 value=""> the same for both genders at 1% for girls and 3% for boys. Finally, boys and girls take cocaine <strong>15.</strong> <input type="text" name="q15" size=20 value=""> , 4%.
+
+
+
+<p><center>
+<input type="button" value="Get score" onClick="getScore(this.form)">
+<input type="reset" value="Clear"><p>
+Score = <input type=text size=15 name="percentage"><br>
+Correct answers:<br>
+<textarea name="solutions" wrap="virtual" rows="15" cols="30"></textarea></center></p>
+
+
+
+</form>
+
+</div>
+
+</div>
+
+
+
+</body>
+
+</html>
