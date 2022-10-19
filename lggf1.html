@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Line Graph Quiz</title>
+
+<style>
+
+
+div.a {
+  font-size: 150%;
+}
+
+div.ex1 {
+ width: 800px;
+margin: auto;
+ 
+}
+
+div.b {
+  line-height: 1.6;
+}
+
+</style>
+
+  </head>
+
+<body>
+
+<div class="a">
+
+<p><script language="JavaScript">
+<!--
+
+var numQues = 9;
+
+var answers = new Array(9);
+answers[0] = ""
+answers[1] = ""
+answers[2] = ""
+answers[3] = ""
+answers[4] = ""
+answers[5] = ""
+answers[6] = ""
+answers[7] = ""
+answers[8] = ""
+
+function getScore(form) {
+  var score = 0;
+  var currElt;
+  var currSelection;
+
+  for (i=0; i<numQues; i++) {
+    currElt = form.elements[i];
+    currSelection = currElt.selectedIndex;
+    if (currElt.options[currSelection].value == answers[i]) {
+      score++;
+    }
+  }
+
+  score = Math.round(score/numQues*100);
+  form.percentage.value = score + "%";
+
+  var correctAnswers = "";
+  for (i=1; i<=numQues; i++) {
+    correctAnswers += i + ". " + answers[i-1] + "\r\n";
+  }
+  form.solutions.value = correctAnswers;
+
+}
+
+// -->
+  </script>
+  </head>
+  <script language="JavaScript">
+<!--
+
+var numQues = 8;
+
+var answers = new Array(8);
+answers[0] = "a significant decrease";
+answers[1] = "a marked increase";
+answers[2] = "reached a peak";
+answers[3] = "a sharp decline";
+answers[4] = "exceeded";
+answers[5] = "a steady downward trend";
+answers[6] = "a significant rise";
+answers[7] = "more popular";
+
+function getScore(form) {
+  var score = 0;
+  var currElt;
+  var currSelection;
+
+  for (i=0; i<numQues; i++) {
+    currElt = form.elements[i];
+    currSelection = currElt.selectedIndex;
+    if (currElt.options[currSelection].value == answers[i]) {
+      score++;
+    }
+  }
+
+  score = Math.round(score/numQues*100);
+  form.percentage.value = score + "%";
+
+  var correctAnswers = "";
+  for (i=1; i<=numQues; i++) {
+    correctAnswers += i + ". " + answers[i-1] + "\r\n";
+  }
+  form.solutions.value = correctAnswers;
+
+}
+
+// -->
+</script> 
+
+
+
+<div class="ex1">
+
+<div class="b">
+
+
+<form name="quiz">
+  <p>The graph shows the quantity of margarine, low fat spreads and butter consumed between 1981 and 2007. The quantities are measured in grams. Over the period 1981 to 2007 as a whole, there was <strong>1.</strong>
+    <select name="q1">
+  <option value="">choose one
+    <option value="reached a peak">reached a peak 
+      <option value="a steady downward trend">a steady downward trend 
+      <option value="a marked increase">a marked increase
+      <option value="more popular">more popular 
+      <option value="a sharp decline">a sharp decline
+      <option value="a significant decrease">a significant decrease 
+      <option value="a significant rise">a significant rise 
+      <option value="exceeded">exceeded
+    </select>
+  in the consumption of butter and margarine and  
+  <strong>2.</strong>
+<select name="q2">
+  <option value="">choose one
+    <option value="reached a peak">reached a peak 
+      <option value="a steady downward trend">a steady downward trend 
+      <option value="a marked increase">a marked increase
+      <option value="more popular">more popular 
+      <option value="a sharp decline">a sharp decline
+      <option value="a significant decrease">a significant decrease 
+      <option value="a significant rise">a significant rise 
+      <option value="exceeded">exceeded
+    </select>
+  in the consumption of low-fat spreads. </p>
+<p>Butter was the most popular fat at the beginning of the period, and consumption
+  <strong>3. </strong>
+  <select name="q3">
+    <option value="">choose one
+      <option value="reached a peak">reached a peak 
+      <option value="a steady downward trend">a steady downward trend 
+      <option value="a marked increase">a marked increase
+      <option value="more popular">more popular 
+      <option value="a sharp decline">a sharp decline
+      <option value="a significant decrease">a significant decrease 
+      <option value="a significant rise">a significant rise 
+      <option value="exceeded">exceeded
+    </select>
+  of about 160 grams in 1986. After this, there was <strong>4.</strong>
+  <select name="q4">
+  <option value="">choose one
+    <option value="reached a peak">reached a peak 
+      <option value="a steady downward trend">a steady downward trend 
+      <option value="a marked increase">a marked increase
+      <option value="more popular">more popular 
+      <option value="a sharp decline">a sharp decline
+      <option value="a significant decrease">a significant decrease 
+      <option value="a significant rise">a significant rise 
+      <option value="exceeded">exceeded
+    </select>
+  . </p>
+<p>The consumption of margarine began lower than that for butter at 90 grams. Following this, in 1991, it  <strong>5.</strong>
+  <select name="q5">
+  <option value="">choose one
+    <option value="reached a peak">reached a peak 
+      <option value="a steady downward trend">a steady downward trend 
+      <option value="a marked increase">a marked increase
+      <option value="more popular">more popular 
+      <option value="a sharp decline">a sharp decline
+      <option value="a significant decrease">a significant decrease 
+      <option value="a significant rise">a significant rise 
+      <option value="exceeded">exceeded
+    </select>
+  that of butter for the first time, but after 1996 there was <strong>6.</strong>
+  <select name="q6">
+  <option value="">choose one
+    <option value="reached a peak">reached a peak 
+      <option value="a steady downward trend">a steady downward trend 
+      <option value="a marked increase">a marked increase
+      <option value="more popular">more popular 
+      <option value="a sharp decline">a sharp decline
+      <option value="a significant decrease">a significant decrease 
+      <option value="a significant rise">a significant rise 
+      <option value="exceeded">exceeded
+    </select>
+  in the amount  consumed, which seemed set to continue. </p>
+<p>Low–fat spreads were introduced in 1996, and they saw <strong>7. </strong>
+  <select name="q7">
+    <option value="">choose one
+      <option value="reached a peak">reached a peak 
+      <option value="a steady downward trend">a steady downward trend 
+      <option value="a marked increase">a marked increase
+      <option value="more popular">more popular 
+      <option value="a sharp decline">a sharp decline
+      <option value="a significant decrease">a significant decrease 
+      <option value="a significant rise">a significant rise 
+      <option value="exceeded">exceeded
+    </select>
+  in their consumption from that time, so that by about 2001 they were <strong>8.</strong>
+<select name="q8">
+  <option value="">choose one
+    <option value="reached a peak">reached a peak 
+      <option value="a steady downward trend">a steady downward trend 
+      <option value="a marked increase">a marked increase
+      <option value="more popular">more popular 
+      <option value="a sharp decline">a sharp decline
+      <option value="a significant decrease">a significant decrease 
+      <option value="a significant rise">a significant rise 
+      <option value="exceeded">exceeded
+    </select> 
+than either butter or margarine. 
+</p>
+<p>
+  <center>
+  <input type="button" value="Get score" onClick="getScore(this.form)">
+  <input type="reset" value="Clear"><p>
+Score = <input type=text size=10 name="percentage"><br>
+Correct answers:<br>
+<textarea name="solutions" wrap="virtual" rows="8" cols="30"></textarea>
+</center>
+</form>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</body>
+
+</html>
